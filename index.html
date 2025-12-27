@@ -28,14 +28,35 @@
             font-size: 1em;
             color: #888;
         }
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .skip-link:focus {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            padding: 1rem;
+            background: #f4f4f4;
+            color: #000;
+            z-index: 1000;
+            text-decoration: underline;
+        }
     </style>
     <script defer src="https://analytics.codequalitycheck.com/script.js" data-website-id="3098fec3-929c-42fd-8fd8-7c05442c60e2"></script>
 </head>
 <body>
-    <div class="container">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <main id="main-content" class="container">
         <h1>R.I.P. Appenguin 🐧</h1>
         <h2>2018 - 2024</h2>
-        <p>Created by <a href="http://yprez.com/" style="color: #000" target="_blank">yprez</a></p>
-    </div>
+        <p>Created by <a href="https://yprez.com/" style="color: #000" target="_blank" rel="noopener noreferrer">yprez</a></p>
+    </main>
 </body>
 </html>
